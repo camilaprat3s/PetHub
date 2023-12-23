@@ -10,6 +10,8 @@ import SwiftData
 
 @main
 struct PetHubApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
@@ -25,8 +27,9 @@ struct PetHubApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabBarView()
         }
         .modelContainer(sharedModelContainer)
     }
 }
+

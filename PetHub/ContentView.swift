@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  PetHub
-//
-//  Created by Camila Prates on 2023-12-22.
-//
-
 import SwiftUI
 import SwiftData
 
@@ -37,6 +30,11 @@ struct ContentView: View {
         } detail: {
             Text("Select an item")
         }
+        .overlay(
+            Text("PetHub 🐾")
+                .font(.largeTitle)
+                .foregroundColor(.primary)
+        )
     }
 
     private func addItem() {
@@ -59,3 +57,4 @@ struct ContentView: View {
     ContentView()
         .modelContainer(for: Item.self, inMemory: true)
 }
+

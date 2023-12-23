@@ -15,6 +15,12 @@
 		B6A9769D2B36670C0065336C /* PetHubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A9769C2B36670C0065336C /* PetHubTests.swift */; };
 		B6A976A72B36670C0065336C /* PetHubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A976A62B36670C0065336C /* PetHubUITests.swift */; };
 		B6A976A92B36670C0065336C /* PetHubUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A976A82B36670C0065336C /* PetHubUITestsLaunchTests.swift */; };
+		B6A976B62B366C250065336C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A976B52B366C250065336C /* AppDelegate.swift */; };
+		B6A976B92B366DE80065336C /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A976B82B366DE80065336C /* TabBarView.swift */; };
+		B6A976C32B36710D0065336C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A976C22B36710D0065336C /* HomeView.swift */; };
+		B6A976C52B36712D0065336C /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A976C42B36712D0065336C /* SearchView.swift */; };
+		B6A976C72B3671490065336C /* SavedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A976C62B3671490065336C /* SavedView.swift */; };
+		B6A976C92B3671680065336C /* ReservationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A976C82B3671680065336C /* ReservationsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +52,12 @@
 		B6A976A22B36670C0065336C /* PetHubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetHubUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6A976A62B36670C0065336C /* PetHubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetHubUITests.swift; sourceTree = "<group>"; };
 		B6A976A82B36670C0065336C /* PetHubUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetHubUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B6A976B52B366C250065336C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B6A976B82B366DE80065336C /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		B6A976C22B36710D0065336C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B6A976C42B36712D0065336C /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		B6A976C62B3671490065336C /* SavedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedView.swift; sourceTree = "<group>"; };
+		B6A976C82B3671680065336C /* ReservationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,11 +108,13 @@
 		B6A976882B36670B0065336C /* PetHub */ = {
 			isa = PBXGroup;
 			children = (
+				B6A976B72B366DCA0065336C /* Views */,
 				B6A976892B36670B0065336C /* PetHubApp.swift */,
 				B6A9768B2B36670B0065336C /* ContentView.swift */,
 				B6A9768D2B36670B0065336C /* Item.swift */,
 				B6A9768F2B36670C0065336C /* Assets.xcassets */,
 				B6A976912B36670C0065336C /* Preview Content */,
+				B6A976B52B366C250065336C /* AppDelegate.swift */,
 			);
 			path = PetHub;
 			sourceTree = "<group>";
@@ -128,6 +142,18 @@
 				B6A976A82B36670C0065336C /* PetHubUITestsLaunchTests.swift */,
 			);
 			path = PetHubUITests;
+			sourceTree = "<group>";
+		};
+		B6A976B72B366DCA0065336C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B6A976B82B366DE80065336C /* TabBarView.swift */,
+				B6A976C82B3671680065336C /* ReservationsView.swift */,
+				B6A976C22B36710D0065336C /* HomeView.swift */,
+				B6A976C42B36712D0065336C /* SearchView.swift */,
+				B6A976C62B3671490065336C /* SavedView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,8 +286,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6A976C72B3671490065336C /* SavedView.swift in Sources */,
+				B6A976B62B366C250065336C /* AppDelegate.swift in Sources */,
 				B6A9768C2B36670B0065336C /* ContentView.swift in Sources */,
+				B6A976C92B3671680065336C /* ReservationsView.swift in Sources */,
 				B6A9768E2B36670B0065336C /* Item.swift in Sources */,
+				B6A976C52B36712D0065336C /* SearchView.swift in Sources */,
+				B6A976C32B36710D0065336C /* HomeView.swift in Sources */,
+				B6A976B92B366DE80065336C /* TabBarView.swift in Sources */,
 				B6A9768A2B36670B0065336C /* PetHubApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
